@@ -1,7 +1,7 @@
 public class diagonallyMove {
-    public int movable(piece[][] board, int row, int col){
+    public int movable(Piece[][] board, int row, int col){
         if(row == 0 && col == 0){
-            if(board[1][1] == piece.EMPTY){
+            if(board[1][1] == Piece.EMPTY){
                 return 8;
             }
             else
@@ -10,10 +10,10 @@ public class diagonallyMove {
 
 
         if(row == 0 && col == 1){
-            if(board[1][0] == piece.EMPTY){
+            if(board[1][0] == Piece.EMPTY){
                 return 6;
             }
-            else if(board[1][2] == piece.EMPTY){
+            else if(board[1][2] == Piece.EMPTY){
                 return 8;
             }
             else
@@ -21,7 +21,7 @@ public class diagonallyMove {
         }
 
         if(row == 0 && col == 2){
-            if(board[1][1] == piece.EMPTY){
+            if(board[1][1] == Piece.EMPTY){
                 return 6;
             }
             else
@@ -29,7 +29,7 @@ public class diagonallyMove {
         }
     //------------------------------------------------------------------------
         if(row == 1 && col == 0){
-            if(board[0][1] == piece.EMPTY){
+            if(board[0][1] == Piece.EMPTY){
                 return 3;
             }
             else
@@ -38,10 +38,10 @@ public class diagonallyMove {
 
 
         if(row == 1 && col == 1){
-            if(board[0][0] == piece.EMPTY){
+            if(board[0][0] == Piece.EMPTY){
                 return 1;
             }
-            else if(board[0][2] == piece.EMPTY){
+            else if(board[0][2] == Piece.EMPTY){
                 return 3;
             }
             else
@@ -49,7 +49,7 @@ public class diagonallyMove {
         }
 
         if(row == 1 && col == 2){
-            if(board[0][1] == piece.EMPTY){
+            if(board[0][1] == Piece.EMPTY){
                 return 1;
             }
             else

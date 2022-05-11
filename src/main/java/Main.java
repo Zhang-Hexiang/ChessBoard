@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         boolean start = true;
         boolean pause = false;
         boolean contiNUE = false;
@@ -28,7 +28,7 @@ public class Main {
         player.setStartDate(dateNow);
         player.setGameOver(gameStatus.RUNNING);
 
-        chessboard.startInstance();
+       // chessboard.startInstance();
 
 
         //首先接收一个棋子位置信息
@@ -40,10 +40,11 @@ public class Main {
         //若能够上榜则进行插入操作 并将playerInfo 进行存储
         //
 //-------------------模拟移动过程-------------------------------------------------------
-        piece[][] pieceB;
+        Piece[][] pieceB = new Piece[2][3];
+
 
         while(true){
-            pieceB = chessboard.getcBoardInstance();
+           // pieceB = chessboard.getcBoardInstance();
             pieceMove movable = new pieceMove();
             if(movable.isMovable(pieceB,locationRow,locationCol)){
 
@@ -51,16 +52,16 @@ public class Main {
                 int emptyRow = 0, emptyCol = 0;     //记录空棋格位置信息
                 for(int r = 0; r < locationRow; r++){       //遍历棋盘找出空棋格位置
                     for (int c = 0; c < locationCol; c++){
-                        if(pieceB[r][c] == piece.EMPTY){
+                        if(pieceB[r][c] == Piece.EMPTY){
                             emptyCol = c;
                             emptyRow = r;
                         }
                     }
                 }
 
-                chessboard.swapInstance(locationRow,locationCol,emptyRow,emptyCol);
+            //    chessboard.swapInstance(locationRow,locationCol,emptyRow,emptyCol);
                 count++;
-                win = chessboard.winOrNotInstance();
+            //    win = chessboard.winOrNotInstance();
                 if(win) break;
                 else continue;
             }

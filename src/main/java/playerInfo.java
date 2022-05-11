@@ -25,7 +25,7 @@ public class playerInfo {
        private Long totalTime;
 
        @JSONField(name = "Board Status")
-       private piece[][] boardStatus;
+       private Piece[][] boardStatus;
 
        public void setGameOver(gameStatus code){
            this.gameOver = code;
@@ -76,10 +76,10 @@ public class playerInfo {
            return this.endDate;
        }
 
-       public void setChessBoard(piece[][] boardNow){
+       public void setChessBoard(Piece[][] boardNow){
                  this.boardStatus = boardNow;
        }
-       public piece[][] getChessBoard(){
+       public Piece[][] getChessBoard(){
            return this.boardStatus;
        }
 

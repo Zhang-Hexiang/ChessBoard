@@ -1,10 +1,10 @@
 public class isGameOver {
-    public boolean GG(piece[][] board){
-        if(board[1][2] == piece.KING
-                && board[1][1] == piece.ROOK
-                && board[1][0] == piece.ROOK
-                && board[0][0] == piece.BISHOP
-                && board[0][1] == piece.BISHOP){
+    public boolean GG(Piece[][] board){
+        if(board[1][2] == Piece.KING
+                && board[1][1] == Piece.ROOK
+                && board[1][0] == Piece.ROOK
+                && board[0][0] == Piece.BISHOP
+                && board[0][1] == Piece.BISHOP){
             return true;
         }
         else

@@ -8,8 +8,7 @@ public class pieceMove {
 
     @Test
     void ttest(){
-       // chessboard.startInstance();
-        chessboard board = new chessboard();
+        Chessboard board = new Chessboard();
         Assertions.assertFalse(this.isMovable(board.getcBoard(), 0, 2));
        // Assertions.assertTrue(this.isMovable(board.getcBoard(), 0, 1));
        // Assertions.assertTrue(this.isMovable(board.getcBoard(), 1, 1));

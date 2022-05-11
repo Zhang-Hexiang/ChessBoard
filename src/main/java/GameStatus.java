@@ -1,3 +1,3 @@
-public enum gameStatus {
+public enum GameStatus {
     WIN,GIVEUP,PAUSE,RUNNING;
 }

@@ -1,7 +1,7 @@
-public class chessboard {
+public class Chessboard {
      Piece[][] cBoard = new Piece[2][3];
 
-    public chessboard() {
+    public Chessboard() {
         this.cBoard[0][0] = Piece.KING;
         this.cBoard[0][1] = Piece.BISHOP;
         this.cBoard[0][2] = Piece.BISHOP;

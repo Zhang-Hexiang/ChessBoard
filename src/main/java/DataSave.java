@@ -3,11 +3,11 @@ import com.alibaba.fastjson.JSONObject;
 import org.junit.jupiter.api.Test;
 
 
-public class dataSave {
+public class DataSave {
     JSONArray jsonArray = new JSONArray();
-    playerInfo player = new playerInfo();
+    PlayerInfo player = new PlayerInfo();
     //playerInfo player, piece[][] board
-    public void setPlayer(playerInfo player1){
+    public void setPlayer(PlayerInfo player1){
         this.player = player1;
     }
 

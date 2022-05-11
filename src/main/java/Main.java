@@ -12,7 +12,7 @@ public class Main {
 
         int locationRow =0,locationCol =0;
 
-        playerInfo player = new playerInfo();
+        PlayerInfo player = new PlayerInfo();
 
         System.out.println("Please enter your ID : ");
 
@@ -26,7 +26,7 @@ public class Main {
         Date dateNow = new Date();
 
         player.setStartDate(dateNow);
-        player.setGameOver(gameStatus.RUNNING);
+        player.setGameOver(GameStatus.RUNNING);
 
        // chessboard.startInstance();
 
@@ -78,7 +78,7 @@ public class Main {
             long total2 = now.getTime() - dateNow.getTime();
             //player.setPauseDate(now);
             player.setEndDate(now);
-            player.setGameOver(gameStatus.WIN);
+            player.setGameOver(GameStatus.WIN);
             player.setTotalTime(total1 + total2);
             player.setCount(count);
 
@@ -91,7 +91,7 @@ public class Main {
             long total = now.getTime() - dateNow.getTime();
             //player.setPauseDate(now);
             player.setEndDate(now);
-            player.setGameOver(gameStatus.PAUSE);
+            player.setGameOver(GameStatus.PAUSE);
             player.setTotalTime(total);
             player.setCount(count);
         }

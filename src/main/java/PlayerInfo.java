@@ -2,7 +2,7 @@ import com.alibaba.fastjson.annotation.JSONField;
 
 import java.util.Date;
 
-public class playerInfo {
+public class PlayerInfo {
 
 
 
@@ -19,7 +19,7 @@ public class playerInfo {
        private Date endDate;
 
        @JSONField(name = "Game Status")
-       private gameStatus gameOver;
+       private GameStatus gameOver;
 
        @JSONField(name = "Total Time")
        private Long totalTime;
@@ -27,10 +27,10 @@ public class playerInfo {
        @JSONField(name = "Board Status")
        private Piece[][] boardStatus;
 
-       public void setGameOver(gameStatus code){
+       public void setGameOver(GameStatus code){
            this.gameOver = code;
        }
-       public gameStatus getGameOver(){
+       public GameStatus getGameOver(){
            return this.gameOver;
        }
 

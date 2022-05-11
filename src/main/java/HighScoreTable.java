@@ -1,5 +1,5 @@
-public class highScoreTable {
-    public playerInfo compare(playerInfo a, playerInfo b){    // 比较 a和b 返回值为排名靠前的一个
+public class HighScoreTable {
+    public PlayerInfo compare(PlayerInfo a, PlayerInfo b){    // 比较 a和b 返回值为排名靠前的一个
         if(a.getCount() < b.getCount()){  // 首先比较步数  步数小的靠前
             return a;
         }

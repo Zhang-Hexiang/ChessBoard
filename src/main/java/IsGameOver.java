@@ -1,5 +1,5 @@
-public class isGameOver {
-    public boolean GG(Piece[][] board){
+public class IsGameOver {
+    public boolean gg(Piece[][] board){
         if(board[1][2] == Piece.KING
                 && board[1][1] == Piece.ROOK
                 && board[1][0] == Piece.ROOK

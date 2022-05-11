@@ -1,6 +1,6 @@
-public class gameResponse {
+public class GameResponse {
 
-    public void response (gameStatus status) throws Exception {
+    public void response (GameStatus status) throws Exception {
         switch (status){
             case WIN:
                 break;

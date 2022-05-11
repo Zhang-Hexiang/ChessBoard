@@ -4,7 +4,7 @@ public class TestClass {
 
     public static void main(String[] args) {
 
-        chessboard chessboardIns = new chessboard();
+        Chessboard chessboardIns = new Chessboard();
         chessboardIns.swap(0,0,1,1);
         System.out.println(Arrays.deepToString(chessboardIns.getcBoard()));
 
